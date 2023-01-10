@@ -1,9 +1,11 @@
-function ErrorPage() {
-  return (
-    <section>
-      <h1>Página não encontrada</h1>
-    </section>
-  );
-}
+import Header from "../components/Header";
+import { MainContainer} from "../style";
 
-export default ErrorPage;
+export default function ErrorPage() {
+    return(
+        <MainContainer>
+            <Header/>
+            <h1>Página de Erro</h1>
+        </MainContainer>
+    )
+}
